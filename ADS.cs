@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the aiming down sights (ADS) functionality for a weapon.
+/// </summary>
 public class ADS : MonoBehaviour
 {
     [Header("Weapon / Camera")]
@@ -14,7 +17,7 @@ public class ADS : MonoBehaviour
     [SerializeField] private float offsetY = 10f;
     [SerializeField] private float offsetZ = 10f;
     
-    [SerializeField]public bool IsAiming { get; private set; } = false;
+    [SerializeField] public bool IsAiming { get; private set; } = false;
     [SerializeField] private float aimingFOV = 30f; 
     [SerializeField] private float defaultFOV = 60f;
     public FOVManager fovManager;
@@ -23,6 +26,9 @@ public class ADS : MonoBehaviour
 
     private Vector3 originalWeaponPosition;
 
+    /// <summary>
+    /// Initializes the ADS component.
+    /// </summary>
     private void Start()
     {
         _camera = GetComponentInParent<Camera>();
@@ -34,16 +40,27 @@ public class ADS : MonoBehaviour
         fovManager = FindObjectOfType<FOVManager>();
     }
 
+    /// <summary>
+    /// Updates the ADS state every frame.
+    /// </summary>
     private void Update()
     {
         myInput();
         HandleAiming();
     }
+
+    /// <summary>
+    /// Handles the input for aiming down sights.
+    /// </summary>
     private void HandleInput()
     {
         if (Input.GetMouseButtonDown(1)) IsAiming = true;   
         if (Input.GetMouseButtonUp(1)) IsAiming = false;    
     }
+
+    /// <summary>
+    /// Handles the aiming logic, including adjusting the field of view and weapon position.
+    /// </summary>
     private void HandleAiming()
     {
         if (IsAiming)
@@ -82,6 +99,9 @@ public class ADS : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles the input for aiming down sights.
+    /// </summary>
     private void myInput()
     {
         if (Input.GetKeyDown(ADSKey))
@@ -94,6 +114,10 @@ public class ADS : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates the aiming state.
+    /// </summary>
+    /// <param name="Aiming">If set to <c>true</c>, the player is aiming down sights.</param>
     private void UpdateAiming(bool Aiming)
     {
         IsAiming = Aiming;       
