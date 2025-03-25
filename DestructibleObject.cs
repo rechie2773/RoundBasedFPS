@@ -6,7 +6,8 @@ public class DestructibleObject : MonoBehaviour
 {
     [Header("Health Settings")]
     public int maxHealth = 100;
-    private int currentHealth;
+    private int currentHealth; //ojbect's current health
+	//handle EasterEgg
     private EasterEggManager easterEggManager;
 
     private void Start()
