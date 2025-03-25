@@ -7,7 +7,7 @@ public class EasterEggManager : MonoBehaviour
     [Header("Easter Egg Settings")]
     public List<GameObject> easterEggObjects; // List of GameObjects to destroy
     public int rewardPoints = 10000; // Points to award when completed
-
+	//0 easter egg at start
     private void Start()
     {
         if (easterEggObjects.Count == 0)
