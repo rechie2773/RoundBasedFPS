@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+// Video intro cua game
 public class IntroVideo : MonoBehaviour
 {
     [Header("Video Player Settings")]

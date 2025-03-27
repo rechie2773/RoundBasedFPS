@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the aiming down sights (ADS) functionality for a weapon.
+/// </summary>
 public class ADS : MonoBehaviour
 {
     [Header("Weapon / Camera")]
@@ -14,7 +17,7 @@ public class ADS : MonoBehaviour
     [SerializeField] private float offsetY = 10f;
     [SerializeField] private float offsetZ = 10f;
     
-    [SerializeField]public bool IsAiming { get; private set; } = false;
+    [SerializeField] public bool IsAiming { get; private set; } = false;
     [SerializeField] private float aimingFOV = 30f; 
     [SerializeField] private float defaultFOV = 60f;
     public FOVManager fovManager;
@@ -40,6 +43,7 @@ public class ADS : MonoBehaviour
         myInput();
         HandleAiming();
     }
+
 
     //xu ly input ban cua nguoi choi
     private void HandleInput()
@@ -87,6 +91,7 @@ public class ADS : MonoBehaviour
         }
     }
 
+
     //quan ly và xu ly cac input cua nguoi choi
     private void myInput()
     {
@@ -99,6 +104,7 @@ public class ADS : MonoBehaviour
             UpdateAiming(false);
         }
     }
+
 
     //cap nhat lai trang thai camera cua nguoi choi
     private void UpdateAiming(bool Aiming)
