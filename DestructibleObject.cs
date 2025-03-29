@@ -13,7 +13,7 @@ public class DestructibleObject : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth; // Set the initial health
-        easterEggManager = FindObjectOfType<EasterEggManager>();
+        easterEggManager = FindObjectOfType<EasterEggManager>();//find every object contains EasterEggManager layout
     }
     public void TakeDamage(int damage)
     {
