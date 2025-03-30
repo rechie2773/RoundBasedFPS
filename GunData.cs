@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Thong tin ve sung trong tro choi
 [CreateAssetMenu(fileName = "NewGun", menuName = "Gun Data")]
 public class GunData : ScriptableObject
 {
