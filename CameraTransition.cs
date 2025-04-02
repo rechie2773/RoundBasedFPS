@@ -17,6 +17,8 @@ public class CameraTransition : MonoBehaviour
     private float elapsedTime; // time passed
     private bool isTransitioning; // camera during transition
 
+    //chinh lai toc do camera
+
     private void OnEnable()
     {
         if (startOnEnable)
@@ -64,6 +66,8 @@ public class CameraTransition : MonoBehaviour
         }
     }
 
+
+///sua lai trigger
     public void TriggerTransition()
     {
         StartTransition();

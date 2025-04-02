@@ -4,6 +4,8 @@ using UnityEngine;
 
 /// <summary>
 /// Handles the aiming down sights (ADS) functionality for a weapon.
+
+/// sua lai chuc nang Vector3
 /// </summary>
 public class ADS : MonoBehaviour
 {
@@ -53,6 +55,7 @@ public class ADS : MonoBehaviour
     }
 
     //xu ly camera cua nguoi choi
+    // cap nhat lai chuc nang nay
     private void HandleAiming()
     {
         if (IsAiming)
