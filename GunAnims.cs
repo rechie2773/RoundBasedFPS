@@ -11,6 +11,7 @@ public class GunAnims : MonoBehaviour
         currentAnimator = animator;
     }
 
+//play anims
     public void PlayShootAnimation()
     {
         if (currentAnimator != null)
