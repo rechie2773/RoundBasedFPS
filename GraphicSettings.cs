@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GraphicSettings : MonoBehaviour
 {
+	//preset low
     public void potato()
     {
         QualitySettings.SetQualityLevel(0);
