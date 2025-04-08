@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GunAudioManager : MonoBehaviour
 {
+    // audio manager for gun sounds
     [Header("Audio Sources")]
     public AudioSource fireAudioSource;   
     public AudioSource reloadAudioSource; 
