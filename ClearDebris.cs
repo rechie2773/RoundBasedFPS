@@ -5,6 +5,7 @@ using TMPro;
 
 public class ClearDebris : MonoBehaviour
 {
+    //Tạo script Debris system
     [Header("Debris Settings")]
     public GameObject debris; 
     public Transform targetPos; 
