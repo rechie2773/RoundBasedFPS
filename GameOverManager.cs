@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Quản lý trạng thái kết thúc trò chơi, bao gồm UI, âm thanh, chuyển đổi camera và tải lại cảnh.
 /// </summary>
+//Tạo script Insta-Kill để giết zombie với 1 viên
 public class GameOverManager : MonoBehaviour
 {
     [Header("Cài đặt Âm thanh")]
