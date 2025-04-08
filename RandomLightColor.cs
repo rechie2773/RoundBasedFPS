@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RandomLightColor : MonoBehaviour
 {
+	//Triển khai fog surround
     // Reference to the Pointlight component
     public Light pointLight;
 
