@@ -16,6 +16,10 @@ public class PauseMenu : MonoBehaviour
     [Header("UI Elements")]
     public List<GameObject> uiElementsToHide;
 	//wake on start
+
+	//starting 
+=======
+
     void Start()
     {
         Time.timeScale = 1f;
