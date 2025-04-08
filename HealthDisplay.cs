@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
+	//display health
     public PlayerHealth playerHealth;  
     public TextMeshProUGUI healthText; 
 
