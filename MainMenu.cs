@@ -4,10 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-	//wake on start 
-=======
-	//wakey wakey 
-
+    //buttons quit and play
     public void Quit()
     {
         Application.Quit();
