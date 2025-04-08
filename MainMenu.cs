@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+	//wake on start 
     public void Quit()
     {
         Application.Quit();
