@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Thong tin ve sung trong tro choi
 [CreateAssetMenu(fileName = "NewGun", menuName = "Gun Data")]
 public class GunData : ScriptableObject
 {
@@ -23,6 +24,7 @@ public class GunData : ScriptableObject
     public float recoilZ; // backward
     public float recoilReturnSpeed = 2f;
 
+	// ammo
     [Header("Ammo Settings")]
     public int reserveAmmo;
 }

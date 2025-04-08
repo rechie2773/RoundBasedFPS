@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles the aiming down sights (ADS) functionality for a weapon.
+/// </summary>
 public class ADS : MonoBehaviour
 {
     [Header("Weapon / Camera")]
@@ -14,7 +17,7 @@ public class ADS : MonoBehaviour
     [SerializeField] private float offsetY = 10f;
     [SerializeField] private float offsetZ = 10f;
     
-    [SerializeField]public bool IsAiming { get; private set; } = false;
+    [SerializeField] public bool IsAiming { get; private set; } = false;
     [SerializeField] private float aimingFOV = 30f; 
     [SerializeField] private float defaultFOV = 60f;
     public FOVManager fovManager;
@@ -22,7 +25,8 @@ public class ADS : MonoBehaviour
     [SerializeField] private KeyCode ADSKey = KeyCode.Mouse1;
 
     private Vector3 originalWeaponPosition;
-
+    
+    // Khoi tao cac gia tri ban dau cho game
     private void Start()
     {
         _camera = GetComponentInParent<Camera>();
@@ -33,17 +37,22 @@ public class ADS : MonoBehaviour
         UpdateAiming(false);
         fovManager = FindObjectOfType<FOVManager>();
     }
-
+    // cap nhat lai các frame cua cho troi
     private void Update()
     {
         myInput();
         HandleAiming();
     }
+
+
+    //xu ly input ban cua nguoi choi
     private void HandleInput()
     {
         if (Input.GetMouseButtonDown(1)) IsAiming = true;   
         if (Input.GetMouseButtonUp(1)) IsAiming = false;    
     }
+
+    //xu ly camera cua nguoi choi
     private void HandleAiming()
     {
         if (IsAiming)
@@ -82,6 +91,8 @@ public class ADS : MonoBehaviour
         }
     }
 
+
+    //quan ly và xu ly cac input cua nguoi choi
     private void myInput()
     {
         if (Input.GetKeyDown(ADSKey))
@@ -94,6 +105,8 @@ public class ADS : MonoBehaviour
         }
     }
 
+
+    //cap nhat lai trang thai camera cua nguoi choi
     private void UpdateAiming(bool Aiming)
     {
         IsAiming = Aiming;       

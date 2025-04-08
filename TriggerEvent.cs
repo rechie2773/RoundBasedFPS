@@ -6,6 +6,7 @@ using TMPro;
 
 public class TriggerEvent : MonoBehaviour
 {
+    //Triển khai effect khi bị tấn công
     public AudioSource audioSource; // Reference to audio source
     public AudioClip triggerSound; // Audio clip to play
 
