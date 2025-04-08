@@ -5,10 +5,12 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    //NavMeshAgent
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
 
+    // Health and damage
     public float health;
     public int damage;
 
@@ -93,7 +95,7 @@ public class EnemyAI : MonoBehaviour
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
     }
-
+    // Chase the player
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
@@ -104,7 +106,7 @@ public class EnemyAI : MonoBehaviour
             nextAudioTime = Time.time + audioCooldown;
         }
     }
-
+    //attack the player
     private void AttackPlayer()
     {
         // Make sure enemy doesn't move
