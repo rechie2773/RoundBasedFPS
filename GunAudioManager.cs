@@ -14,6 +14,7 @@ public class GunAudioManager : MonoBehaviour
     public AudioClip fireSound;   
     public AudioClip reloadSound; 
 
+    // Audio settings
     public void PlayFireSound()
     {
         if (fireAudioSource != null && fireSound != null)
