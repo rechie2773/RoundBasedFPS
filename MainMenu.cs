@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+    //buttons quit and play
     public void Quit()
     {
         Application.Quit();
