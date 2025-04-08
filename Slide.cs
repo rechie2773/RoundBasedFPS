@@ -24,7 +24,7 @@ public class Slide : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-
+    // Tạo script điều khiển nhân vật
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
