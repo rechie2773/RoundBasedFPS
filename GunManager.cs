@@ -82,6 +82,7 @@ public class GunManager : MonoBehaviour
             }
         }
     }
+	//gun update on wake 
     private void Update()
     {
         if (PauseMenu.paused) return;
