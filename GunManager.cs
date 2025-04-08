@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 using TMPro;
 public class GunManager : MonoBehaviour
 {
+    // This script manages the player's gun system, including shooting, reloading, and equipping different guns.
     [Header("Weapon Models")]
     public List<GameObject> weaponModels; // weapon models
 
