@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 //back to menu button
 public class BackToMenu : MonoBehaviour
 {
-    //button trigger
+    //button
     public void BackToMenuClick() 
     {
         //back to menu
