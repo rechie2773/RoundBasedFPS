@@ -52,6 +52,7 @@ public class GunManager : MonoBehaviour
     public TextMeshProUGUI instaKillTimerText;
     private MasterAudioSource masterAudioSource;
 
+//wake on start
     private void Start()
     {
         if (guns.Count > 0) // check if gun list is emptyy
@@ -81,6 +82,7 @@ public class GunManager : MonoBehaviour
             }
         }
     }
+	//gun update on wake 
     private void Update()
     {
         if (PauseMenu.paused) return;

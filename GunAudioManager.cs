@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class GunAudioManager : MonoBehaviour
 {
+    // audio manager for gun sounds
     [Header("Audio Sources")]
     public AudioSource fireAudioSource;   
     public AudioSource reloadAudioSource; 
 
+    //audio clips for gun sounds
     [Header("Audio Clips")]
     public AudioClip fireSound;   
     public AudioClip reloadSound; 
 
+    // Audio settings
     public void PlayFireSound()
     {
         if (fireAudioSource != null && fireSound != null)
@@ -23,7 +26,7 @@ public class GunAudioManager : MonoBehaviour
             Debug.LogWarning("Fire AudioSource or Fire Sound is missing!");
         }
     }
-
+	//update audio
     public void PlayReloadSound()
     {
         if (reloadAudioSource != null && reloadSound != null)

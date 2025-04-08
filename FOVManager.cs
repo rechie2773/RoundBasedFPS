@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class FOVManager : MonoBehaviour
 {
+	
+	
+	// ref
     [Header("References")]
     public Camera playerCamera;
     public Slider fovSlider;
@@ -14,6 +17,7 @@ public class FOVManager : MonoBehaviour
 
     private float defaultFOV = 80f;
 
+	//wake on start 
     private void Start()
     {
         if (playerCamera == null)

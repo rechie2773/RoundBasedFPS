@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraTransition : MonoBehaviour
 {
+    // Tạo script điều khiển chuột ở góc nhìn thứ nhất
     [Header("Transition Settings")]
     public Transform targetPosition; //target position
     public float transitionDuration = 2f; 
@@ -14,7 +15,7 @@ public class CameraTransition : MonoBehaviour
 
     private Vector3 initialPosition; // start position
     private Quaternion initialRotation; // cam's rotation
-    private float elapsedTime; 
+    private float elapsedTime; // time passed
     private bool isTransitioning; // camera during transition
 
     private void OnEnable()
@@ -67,5 +68,11 @@ public class CameraTransition : MonoBehaviour
     public void TriggerTransition()
     {
         StartTransition();
+    }
+
+    public void returnToOriginalPosition()
+    {
+        transform.position = initialPosition;
+        transform.rotation = initialRotation;
     }
 }
