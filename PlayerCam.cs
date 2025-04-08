@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public class PlayerCam : MonoBehaviour
 {
+	//Triển khai âm thanh zombie
     public float senX;
     public float senY;
 
