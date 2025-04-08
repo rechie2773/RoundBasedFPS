@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class RoundManager : MonoBehaviour
 {
+    //Triển khai hiển thị đếm Round
     public int initialZombiesPerRound = 5;
     public int currentZombiesPerRound;
 
