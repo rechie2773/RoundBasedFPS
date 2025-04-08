@@ -5,6 +5,7 @@ using UnityEngine;
 public class GraphicSettings : MonoBehaviour
 {
 	//preset low
+	//trien khai player
     public void potato()
     {
         QualitySettings.SetQualityLevel(0);
