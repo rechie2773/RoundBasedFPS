@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class FOVManager : MonoBehaviour
 {
+	
+	
+	// ref
     [Header("References")]
     public Camera playerCamera;
     public Slider fovSlider;
