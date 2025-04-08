@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MapChoosing : MonoBehaviour
 {
+    // This script is responsible for loading different maps in the game.
     public void FogClick()
     {
         // Clear all persistent objects if necessary
