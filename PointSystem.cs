@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PointSystem : MonoBehaviour
 {
+	//Tạo script Max ammo để hồi đạn dược
     public static PointSystem Instance; 
     private int points;
     private int totalPointsEarned;
