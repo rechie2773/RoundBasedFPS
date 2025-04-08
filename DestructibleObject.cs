@@ -27,6 +27,7 @@ public class DestructibleObject : MonoBehaviour
                 easterEggManager.OnObjectDestroyed(gameObject);
             }
 
+			//destroy on trigger
             Destroy(gameObject);
         }
     }
