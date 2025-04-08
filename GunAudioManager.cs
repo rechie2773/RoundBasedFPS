@@ -26,7 +26,6 @@ public class GunAudioManager : MonoBehaviour
             Debug.LogWarning("Fire AudioSource or Fire Sound is missing!");
         }
     }
-
     //play reload sound
     public void PlayReloadSound()
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class wpnSway : MonoBehaviour
 {
+	//Tạo script quản lý Round
     [Header("Sway Settings")]
     [SerializeField] private float smooth;
     [SerializeField] private float swayMultiplier;

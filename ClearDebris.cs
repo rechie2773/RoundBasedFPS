@@ -5,12 +5,14 @@ using TMPro;
 
 public class ClearDebris : MonoBehaviour
 {
+    // trien khai 
     [Header("Debris Settings")]
     public GameObject debris; 
     public Transform targetPos; 
     public float moveSpeed = 2f; 
     public int clearCost = 100; 
 
+    //update
     [Header("Audio Settings")]
     public AudioSource audioSource;
     public AudioClip clearSuccessClip;

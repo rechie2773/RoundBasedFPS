@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InstaKill : MonoBehaviour
 {
+	//trien khai mot so chuc nang
     [Header("Announcer Settings")]
     public AudioClip announcerClip; 
     public float announcerVolume = 0.25f;
