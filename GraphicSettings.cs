@@ -7,6 +7,7 @@ public class GraphicSettings : MonoBehaviour
 	//lowest
 =======
 	//preset low
+	//trien khai player
     public void potato()
     {
         QualitySettings.SetQualityLevel(0);
