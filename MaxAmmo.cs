@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MaxAmmo : MonoBehaviour
 {
+	//Tạo script quản lý Max ammo và Insta-kill
     [Header("Announcer Settings")]
     public AudioClip announcerClip;
     public float announcerVolume = 0.25f;
