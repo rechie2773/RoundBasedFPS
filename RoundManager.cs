@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class RoundManager : MonoBehaviour
 {
+    // This script manages the rounds of zombies in the game.
     public int initialZombiesPerRound = 5;
     public int currentZombiesPerRound;
 
