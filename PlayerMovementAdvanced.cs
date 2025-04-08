@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovementAdvanced : MonoBehaviour
 {
+	//Triển khai map barrier
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
