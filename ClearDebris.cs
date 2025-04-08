@@ -11,6 +11,7 @@ public class ClearDebris : MonoBehaviour
     public float moveSpeed = 2f; 
     public int clearCost = 100; 
 
+    //update
     [Header("Audio Settings")]
     public AudioSource audioSource;
     public AudioClip clearSuccessClip;
