@@ -39,6 +39,11 @@ public class GameOverManager : MonoBehaviour
 
     private List<AudioSource> allAudioSources = new List<AudioSource>();
 
+
+
+	//disable at start 
+=======
+
     public static bool isGameOver = false;
 
     /// <summary>
