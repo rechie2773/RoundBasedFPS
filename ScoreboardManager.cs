@@ -5,6 +5,7 @@ using TMPro;
 
 public class ScoreboardManager : MonoBehaviour
 {
+	//Triển khai hệ thống triệu hồi kẻ địch
     [Header("Scoreboard UI")]
     public GameObject scoreboardUI; 
     public TextMeshProUGUI roundsSurvivedText; 
