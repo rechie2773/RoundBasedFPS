@@ -9,6 +9,7 @@ public class GunAudioManager : MonoBehaviour
     public AudioSource fireAudioSource;   
     public AudioSource reloadAudioSource; 
 
+    //audio clips for gun sounds
     [Header("Audio Clips")]
     public AudioClip fireSound;   
     public AudioClip reloadSound; 
