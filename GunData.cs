@@ -24,6 +24,7 @@ public class GunData : ScriptableObject
     public float recoilZ; // backward
     public float recoilReturnSpeed = 2f;
 
+	// ammo
     [Header("Ammo Settings")]
     public int reserveAmmo;
 }
