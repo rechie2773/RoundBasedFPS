@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestructibleObject : MonoBehaviour
 {
+	//Tạo script đếm số lượng object zombie cho từng round cụ thể
     [Header("Health Settings")]
     public int maxHealth = 100;
     private int currentHealth; //ojbect's current health
