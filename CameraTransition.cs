@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraTransition : MonoBehaviour
 {
+    // Tạo script điều khiển chuột ở góc nhìn thứ nhất
     [Header("Transition Settings")]
     public Transform targetPosition; //target position
     public float transitionDuration = 2f; 
