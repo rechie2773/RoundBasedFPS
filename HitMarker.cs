@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HitMarker : MonoBehaviour
 {
+	//them chuc nang zombie
     [Header("UI Elements")]
     public GameObject hitmarker; 
 
