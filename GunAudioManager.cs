@@ -27,6 +27,7 @@ public class GunAudioManager : MonoBehaviour
         }
     }
 
+    //play reload sound
     public void PlayReloadSound()
     {
         if (reloadAudioSource != null && reloadSound != null)
